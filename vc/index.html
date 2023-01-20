@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="/vc/style.css">
-  <script type='text/javascript' src='/vc/min.js'></script>
+  <title>vRoom VC</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="/vc/styles.css">
+  <script type="text/javascript" src="/chat/min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <div class="copy">Send your URL to a friend to start a video call</div>
+  <div class="sr-sharebar sr-sb-vl sr-sb-left"><div class="socializer" data-features="32px,circle,opacity,vertical,icon-dark,bg-white,pad" data-sites="print,email,shortlink,pdf,phone"></div></div>
+  <div class="copy">Send link to friend to start a call</div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
   <script src="/vc/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/js/socializer.min.js"></script>
+  <script>
+    (function(){
+        socializer( '.socializer' );
+    }());
+  </script>
 </body>
 </html>
